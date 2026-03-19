@@ -100,4 +100,4 @@ def apply(job_id):
     return "Applied Successfully!"
 
 if __name__ == "__main__":
-    portal_app.run(debug=True)
+    portal_app.run(host="0.0.0.0", port=10000)
