@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<div class="container">
+<h2>Company Dashboard</h2>
+<form method="post">
+<input name="job" placeholder="Enter Job Title">
+<button>Add Job</button>
+</form>
+{% for job in jobs %}
+<p>{{ job[1] }}</p>
+{% endfor %}
+</div>

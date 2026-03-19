@@ -1,0 +1,7 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<div class="container">
+<h2>Student Dashboard</h2>
+{% for job in jobs %}
+<p>{{ job[1] }} <a href="/apply/{{ job[0] }}">Apply</a></p>
+{% endfor %}
+</div>
